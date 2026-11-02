@@ -1,0 +1,315 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI TRUST | Global AI & Robotics Safety Registry</title>
+<meta name="description" content="An independent initiative for AI and robotics transparency, safety and reliability.">
+
+<style>
+:root {
+  --bg:#091321;
+  --panel:#111f31;
+  --white:#f4f7fb;
+  --muted:#aab6c5;
+  --silver:#c5d0dd;
+  --green:#38bd80;
+  --yellow:#e9c34f;
+  --orange:#f39442;
+  --red:#e85c62;
+  --grey:#8793a3;
+}
+* {box-sizing:border-box}
+body {
+  margin:0;
+  background:var(--bg);
+  color:var(--white);
+  font-family:Arial,sans-serif;
+  line-height:1.6;
+}
+header {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:22px 7%;
+  border-bottom:1px solid #263447;
+  flex-wrap:wrap;
+  gap:15px;
+}
+.logo {font-size:25px;font-weight:800;letter-spacing:2px}
+.logo span {color:var(--green)}
+nav {display:flex;gap:20px;flex-wrap:wrap}
+nav a {color:var(--silver);text-decoration:none;font-size:14px}
+select {
+  background:var(--panel);color:white;
+  border:1px solid #40516a;padding:9px;border-radius:6px
+}
+.hero {
+  padding:95px 8% 80px;
+  max-width:1100px;
+  margin:auto;
+}
+.eyebrow {color:var(--green);letter-spacing:3px;font-size:12px;font-weight:bold}
+h1 {font-size:clamp(38px,6vw,68px);line-height:1.1;margin:18px 0}
+.hero p {color:var(--muted);font-size:18px;max-width:700px}
+.btn {
+  display:inline-block;
+  margin-top:22px;
+  padding:14px 23px;
+  background:var(--green);
+  color:#061522;
+  text-decoration:none;
+  font-weight:bold;
+  border-radius:5px;
+}
+section {padding:55px 8%;max-width:1250px;margin:auto}
+h2 {font-size:30px}
+.sub {color:var(--muted);max-width:720px}
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
+  gap:17px;margin-top:25px
+}
+.card {
+  background:var(--panel);
+  border:1px solid #27384c;
+  padding:23px;border-radius:10px
+}
+.dot {display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:8px}
+.green {background:var(--green)}
+.yellow {background:var(--yellow)}
+.orange {background:var(--orange)}
+.red {background:var(--red)}
+.grey {background:var(--grey)}
+.card p {color:var(--muted);font-size:14px}
+input {
+  width:100%;padding:14px;
+  border-radius:6px;border:1px solid #40516a;
+  background:var(--panel);color:white;margin:15px 0
+}
+.tag {
+  font-size:11px;color:var(--yellow);
+  border:1px solid var(--yellow);
+  padding:4px 8px;border-radius:4px
+}
+footer {
+  padding:35px 8%;border-top:1px solid #263447;
+  color:var(--muted);font-size:13px
+}
+a {color:var(--green)}
+@media(max-width:600px) {
+  header {padding:18px 5%}
+  nav {gap:12px}
+  .hero {padding:65px 6%}
+  section {padding:40px 6%}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">AI <span>TRUST</span></div>
+  <nav>
+    <a href="#about" data-i="about">About</a>
+    <a href="#registry" data-i="registry">Registry</a>
+    <a href="#safety" data-i="safety">Safety</a>
+    <a href="#method" data-i="method">Methodology</a>
+  </nav>
+  <select id="language" aria-label="Select language">
+    <option value="en">English</option>
+    <option value="fr">Français</option>
+    <option value="es">Español</option>
+    <option value="zh">中文</option>
+    <option value="ar">العربية</option>
+    <option value="hi">हिन्दी</option>
+    <option value="sw">Kiswahili</option>
+  </select>
+</header>
+
+<div class="hero">
+  <div class="eyebrow">GLOBAL AI & ROBOTICS SAFETY REGISTRY</div>
+  <h1 data-i="headline">KNOW THE AI.<br>MEASURE THE RISK.<br>PROTECT HUMANITY.</h1>
+  <p data-i="intro">
+    An independent initiative to improve transparency,
+    safety and accountability in artificial intelligence
+    and robotics.
+  </p>
+  <a class="btn" href="#registry" data-i="explore">EXPLORE THE REGISTRY</a>
+</div>
+
+<section id="about">
+  <h2 data-i="mission">Our Mission</h2>
+  <p class="sub" data-i="missionText">
+    We aim to make information about AI systems and robots
+    accessible, understandable and transparent for everyone.
+  </p>
+</section>
+
+<section id="safety">
+  <h2 data-i="classification">Safety Classification</h2>
+  <p class="sub" data-i="classificationText">
+    Five risk levels and one verification status.
+    Each assessment must be supported by documented evidence.
+  </p>
+  <div class="grid">
+    <div class="card"><span class="dot green"></span><b>GREEN</b><p>Low risk within assessed scope.</p></div>
+    <div class="card"><span class="dot yellow"></span><b>YELLOW</b><p>Moderate risk. Caution recommended.</p></div>
+    <div class="card"><span class="dot orange"></span><b>ORANGE</b><p>Elevated risk. Enhanced controls.</p></div>
+    <div class="card"><span class="dot red"></span><b>RED</b><p>High risk. Serious hazards identified.</p></div>
+    <div class="card"><span class="dot grey"></span><b>GREY</b><p>Unverified. Evidence insufficient.</p></div>
+  </div>
+</section>
+
+<section id="registry">
+  <h2 data-i="registryTitle">Explore the Registry</h2>
+  <p class="sub" data-i="registryText">
+    Search the demonstration records below.
+  </p>
+  <input id="search" type="search"
+    placeholder="Search AI systems or robots..."
+    aria-label="Search registry">
+  <div class="grid" id="records">
+    <div class="card">
+      <span class="tag">ILLUSTRATIVE DEMO</span>
+      <h3>Example AI Assistant</h3>
+      <p>Type: Software AI</p>
+      <p>Status: <b>GREY — Unverified</b></p>
+      <p>Independent assessment: Not conducted.</p>
+    </div>
+    <div class="card">
+      <span class="tag">ILLUSTRATIVE DEMO</span>
+      <h3>Example Industrial Robot</h3>
+      <p>Type: Physical robot</p>
+      <p>Status: <b>GREY — Unverified</b></p>
+      <p>Independent assessment: Not conducted.</p>
+    </div>
+  </div>
+</section>
+
+<section id="method">
+  <h2 data-i="methodTitle">Our Methodology</h2>
+  <p class="sub" data-i="methodText">
+    AI TRUST intends to examine identity, intended use,
+    safety controls, performance, reliability, autonomy,
+    cybersecurity and documented incidents.
+    Results will include scope, test conditions,
+    evidence, limitations and assessment date.
+  </p>
+</section>
+
+<footer>
+  <b>AI TRUST</b> — Global AI & Robotics Safety Registry
+  <p>Independent initiative. Registry inclusion is not certification or regulatory approval.</p>
+  <p>© 2026 AI TRUST. Working project.</p>
+</footer>
+
+<script>
+const translations = {
+en:{
+about:"About",registry:"Registry",safety:"Safety",method:"Methodology",
+headline:"KNOW THE AI.<br>MEASURE THE RISK.<br>PROTECT HUMANITY.",
+intro:"An independent initiative to improve transparency, safety and accountability in artificial intelligence and robotics.",
+explore:"EXPLORE THE REGISTRY",mission:"Our Mission",
+missionText:"We aim to make information about AI systems and robots accessible, understandable and transparent for everyone.",
+classification:"Safety Classification",
+classificationText:"Five risk levels and one verification status. Each assessment must be supported by documented evidence.",
+registryTitle:"Explore the Registry",registryText:"Search the demonstration records below.",
+methodTitle:"Our Methodology",
+methodText:"AI TRUST intends to examine identity, intended use, safety controls, performance, reliability, autonomy, cybersecurity and documented incidents. Results will include scope, test conditions, evidence, limitations and assessment date."
+},
+fr:{
+about:"À propos",registry:"Registre",safety:"Sécurité",method:"Méthodologie",
+headline:"COMPRENDRE L'IA.<br>MESURER LE RISQUE.<br>PROTÉGER L'HUMANITÉ.",
+intro:"Une initiative indépendante pour améliorer la transparence, la sécurité et la responsabilité dans l'intelligence artificielle et la robotique.",
+explore:"EXPLORER LE REGISTRE",mission:"Notre mission",
+missionText:"Rendre les informations sur les systèmes d'IA et les robots accessibles, compréhensibles et transparentes pour tous.",
+classification:"Classification de sécurité",
+classificationText:"Cinq niveaux de risque et un statut de vérification. Chaque évaluation doit être soutenue par des preuves documentées.",
+registryTitle:"Explorer le registre",registryText:"Recherchez dans les fiches de démonstration ci-dessous.",
+methodTitle:"Notre méthodologie",
+methodText:"AI TRUST prévoit d'examiner l'identité, l'utilisation prévue, les contrôles de sécurité, les performances, la fiabilité, l'autonomie, la cybersécurité et les incidents documentés. Les résultats préciseront le périmètre, les conditions de test, les preuves, les limites et la date d'évaluation."
+},
+es:{
+about:"Acerca de",registry:"Registro",safety:"Seguridad",method:"Metodología",
+headline:"CONOCE LA IA.<br>MIDE EL RIESGO.<br>PROTEGE A LA HUMANIDAD.",
+intro:"Una iniciativa independiente para mejorar la transparencia, la seguridad y la responsabilidad en la inteligencia artificial y la robótica.",
+explore:"EXPLORAR EL REGISTRO",mission:"Nuestra misión",
+missionText:"Hacer que la información sobre sistemas de IA y robots sea accesible, comprensible y transparente para todos.",
+classification:"Clasificación de seguridad",
+classificationText:"Cinco niveles de riesgo y un estado de verificación. Cada evaluación debe estar respaldada por pruebas documentadas.",
+registryTitle:"Explorar el registro",registryText:"Busca en los registros de demostración.",
+methodTitle:"Nuestra metodología",
+methodText:"AI TRUST pretende examinar la identidad, el uso previsto, los controles de seguridad, el rendimiento, la fiabilidad, la autonomía, la ciberseguridad y los incidentes documentados."
+},
+zh:{
+about:"关于我们",registry:"登记库",safety:"安全",method:"评估方法",
+headline:"了解人工智能。<br>衡量风险。<br>保护人类。",
+intro:"一个旨在提高人工智能与机器人透明度、安全性和责任意识的独立倡议。",
+explore:"探索登记库",mission:"我们的使命",
+missionText:"让每个人都能获取并理解人工智能系统和机器人的相关信息。",
+classification:"安全分类",
+classificationText:"五个风险等级和一个验证状态。每项评估都必须有记录证据支持。",
+registryTitle:"探索登记库",registryText:"搜索以下演示记录。",
+methodTitle:"评估方法",
+methodText:"AI TRUST计划评估身份、预期用途、安全控制、性能、可靠性、自主性、网络安全和已记录事件。"
+},
+ar:{
+about:"من نحن",registry:"السجل",safety:"السلامة",method:"المنهجية",
+headline:"افهم الذكاء الاصطناعي.<br>قيّم المخاطر.<br>احمِ الإنسانية.",
+intro:"مبادرة مستقلة لتعزيز الشفافية والسلامة والمساءلة في الذكاء الاصطناعي والروبوتات.",
+explore:"استكشف السجل",mission:"مهمتنا",
+missionText:"جعل المعلومات حول أنظمة الذكاء الاصطناعي والروبوتات متاحة وواضحة للجميع.",
+classification:"تصنيف السلامة",
+classificationText:"خمسة مستويات للمخاطر وحالة واحدة للتحقق. يجب دعم كل تقييم بأدلة موثقة.",
+registryTitle:"استكشف السجل",registryText:"ابحث في السجلات التجريبية أدناه.",
+methodTitle:"منهجيتنا",
+methodText:"تعتزم AI TRUST دراسة الهوية والاستخدام المقصود وضوابط السلامة والأداء والموثوقية والاستقلالية والأمن السيبراني والحوادث الموثقة."
+},
+hi:{
+about:"हमारे बारे में",registry:"रजिस्ट्री",safety:"सुरक्षा",method:"कार्यप्रणाली",
+headline:"AI को समझें।<br>जोखिम मापें।<br>मानवता की रक्षा करें।",
+intro:"कृत्रिम बुद्धिमत्ता और रोबोटिक्स में पारदर्शिता, सुरक्षा और जवाबदेही बढ़ाने की स्वतंत्र पहल।",
+explore:"रजिस्ट्री देखें",mission:"हमारा मिशन",
+missionText:"AI प्रणालियों और रोबोटों की जानकारी सभी के लिए सुलभ और समझने योग्य बनाना।",
+classification:"सुरक्षा वर्गीकरण",
+classificationText:"पाँच जोखिम स्तर और एक सत्यापन स्थिति। हर आकलन दस्तावेज़ी प्रमाण पर आधारित होना चाहिए।",
+registryTitle:"रजिस्ट्री देखें",registryText:"नीचे दिए गए प्रदर्शन रिकॉर्ड खोजें।",
+methodTitle:"हमारी कार्यप्रणाली",
+methodText:"AI TRUST पहचान, इच्छित उपयोग, सुरक्षा नियंत्रण, प्रदर्शन, विश्वसनीयता, स्वायत्तता, साइबर सुरक्षा और दर्ज घटनाओं का मूल्यांकन करना चाहता है।"
+},
+sw:{
+about:"Kuhusu sisi",registry:"Rejesta",safety:"Usalama",method:"Mbinu",
+headline:"IFAHAMU AI.<br>PIMA HATARI.<br>LINDA UBINADAMU.",
+intro:"Mpango huru wa kuimarisha uwazi, usalama na uwajibikaji katika akili bandia na roboti.",
+explore:"CHUNGUZA REJESTA",mission:"Dhamira yetu",
+missionText:"Kufanya taarifa kuhusu mifumo ya AI na roboti zipatikane na kueleweka kwa kila mtu.",
+classification:"Uainishaji wa usalama",
+classificationText:"Viwango vitano vya hatari na hali moja ya uthibitishaji. Kila tathmini lazima iwe na ushahidi uliorekodiwa.",
+registryTitle:"Chunguza rejesta",registryText:"Tafuta rekodi za mfano hapa chini.",
+methodTitle:"Mbinu yetu",
+methodText:"AI TRUST inalenga kuchunguza utambulisho, matumizi yaliyokusudiwa, udhibiti wa usalama, utendaji, uaminifu, uhuru wa kufanya kazi, usalama wa mtandao na matukio yaliyoripotiwa."
+}
+};
+
+document.getElementById("language").addEventListener("change",e=>{
+ const lang=e.target.value;
+ const t=translations[lang];
+ document.documentElement.lang=lang;
+ document.documentElement.dir=lang==="ar"?"rtl":"ltr";
+ document.querySelectorAll("[data-i]").forEach(el=>{
+   const key=el.dataset.i;
+   if(t[key]) el.innerHTML=t[key];
+ });
+});
+
+document.getElementById("search").addEventListener("input",e=>{
+ const q=e.target.value.toLowerCase();
+ document.querySelectorAll("#records .card").forEach(card=>{
+   card.style.display=card.innerText.toLowerCase().includes(q)?"block":"none";
+ });
+});
+</script>
+</body>
+</html>
