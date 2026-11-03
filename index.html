@@ -4,8 +4,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI TRUST | Global AI & Robotics Safety Registry</title>
-<meta name="description" content="An independent initiative for AI and robotics transparency, safety and reliability.">
+
+<title>EZIOKWU AI | Artificial Intelligence Verification & Trust</title>
+
+<meta name="description" content="EZIOKWU AI is an independent initiative dedicated to the identification, research, evaluation and transparency of artificial intelligence systems and autonomous robotics.">
+
+<meta name="theme-color" content="#091321">
 
 <style>
 :root {
@@ -20,7 +24,11 @@
   --red:#e85c62;
   --grey:#8793a3;
 }
+
 * {box-sizing:border-box}
+
+html {scroll-behavior:smooth}
+
 body {
   margin:0;
   background:var(--bg);
@@ -28,6 +36,7 @@ body {
   font-family:Arial,sans-serif;
   line-height:1.6;
 }
+
 header {
   display:flex;
   justify-content:space-between;
@@ -37,22 +46,78 @@ header {
   flex-wrap:wrap;
   gap:15px;
 }
-.logo {font-size:25px;font-weight:800;letter-spacing:2px}
-.logo span {color:var(--green)}
-nav {display:flex;gap:20px;flex-wrap:wrap}
-nav a {color:var(--silver);text-decoration:none;font-size:14px}
-select {
-  background:var(--panel);color:white;
-  border:1px solid #40516a;padding:9px;border-radius:6px
+
+.logo {
+  font-size:25px;
+  font-weight:800;
+  letter-spacing:2px;
 }
+
+.logo span {color:var(--green)}
+
+.brand-small {
+  display:block;
+  font-size:9px;
+  letter-spacing:2px;
+  color:var(--muted);
+  margin-top:-4px;
+}
+
+nav {
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+nav a {
+  color:var(--silver);
+  text-decoration:none;
+  font-size:14px;
+}
+
+nav a:hover {color:var(--green)}
+
+select {
+  background:var(--panel);
+  color:white;
+  border:1px solid #40516a;
+  padding:9px;
+  border-radius:6px;
+}
+
 .hero {
   padding:95px 8% 80px;
-  max-width:1100px;
+  max-width:1250px;
   margin:auto;
 }
-.eyebrow {color:var(--green);letter-spacing:3px;font-size:12px;font-weight:bold}
-h1 {font-size:clamp(38px,6vw,68px);line-height:1.1;margin:18px 0}
-.hero p {color:var(--muted);font-size:18px;max-width:700px}
+
+.eyebrow {
+  color:var(--green);
+  letter-spacing:3px;
+  font-size:12px;
+  font-weight:bold;
+}
+
+h1 {
+  font-size:clamp(38px,6vw,68px);
+  line-height:1.1;
+  margin:18px 0;
+}
+
+.hero p {
+  color:var(--muted);
+  font-size:18px;
+  max-width:720px;
+}
+
+.tagline {
+  color:var(--silver);
+  font-size:13px;
+  letter-spacing:2px;
+  margin-top:22px;
+  font-weight:bold;
+}
+
 .btn {
   display:inline-block;
   margin-top:22px;
@@ -63,46 +128,121 @@ h1 {font-size:clamp(38px,6vw,68px);line-height:1.1;margin:18px 0}
   font-weight:bold;
   border-radius:5px;
 }
-section {padding:55px 8%;max-width:1250px;margin:auto}
+
+.btn:hover {background:#56d99b}
+
+section {
+  padding:55px 8%;
+  max-width:1250px;
+  margin:auto;
+}
+
 h2 {font-size:30px}
-.sub {color:var(--muted);max-width:720px}
+
+.sub {
+  color:var(--muted);
+  max-width:760px;
+}
+
 .grid {
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
-  gap:17px;margin-top:25px
+  gap:17px;
+  margin-top:25px;
 }
+
 .card {
   background:var(--panel);
   border:1px solid #27384c;
-  padding:23px;border-radius:10px
+  padding:23px;
+  border-radius:10px;
 }
-.dot {display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:8px}
+
+.card h3 {margin-top:12px}
+
+.dot {
+  display:inline-block;
+  width:11px;
+  height:11px;
+  border-radius:50%;
+  margin-right:8px;
+}
+
 .green {background:var(--green)}
 .yellow {background:var(--yellow)}
 .orange {background:var(--orange)}
 .red {background:var(--red)}
 .grey {background:var(--grey)}
-.card p {color:var(--muted);font-size:14px}
-input {
-  width:100%;padding:14px;
-  border-radius:6px;border:1px solid #40516a;
-  background:var(--panel);color:white;margin:15px 0
+
+.card p {
+  color:var(--muted);
+  font-size:14px;
 }
+
 .tag {
-  font-size:11px;color:var(--yellow);
+  font-size:11px;
+  color:var(--yellow);
   border:1px solid var(--yellow);
-  padding:4px 8px;border-radius:4px
+  padding:4px 8px;
+  border-radius:4px;
 }
+
+input {
+  width:100%;
+  padding:14px;
+  border-radius:6px;
+  border:1px solid #40516a;
+  background:var(--panel);
+  color:white;
+  margin:15px 0;
+  font-size:15px;
+}
+
+input:focus, select:focus {
+  outline:2px solid var(--green);
+  outline-offset:2px;
+}
+
+.notice {
+  border-left:3px solid var(--yellow);
+  padding:12px 17px;
+  background:#172335;
+  color:var(--muted);
+  font-size:13px;
+  margin-top:25px;
+}
+
 footer {
-  padding:35px 8%;border-top:1px solid #263447;
-  color:var(--muted);font-size:13px
+  padding:35px 8%;
+  border-top:1px solid #263447;
+  color:var(--muted);
+  font-size:13px;
 }
+
+footer strong {color:var(--white)}
+
 a {color:var(--green)}
+
+[dir="rtl"] {
+  text-align:right;
+}
+
+[dir="rtl"] .notice {
+  border-left:none;
+  border-right:3px solid var(--yellow);
+}
+
+[dir="rtl"] .dot {
+  margin-right:0;
+  margin-left:8px;
+}
+
 @media(max-width:600px) {
   header {padding:18px 5%}
   nav {gap:12px}
   .hero {padding:65px 6%}
   section {padding:40px 6%}
+  .logo {font-size:21px}
 }
 </style>
 </head>
@@ -110,13 +250,19 @@ a {color:var(--green)}
 <body>
 
 <header>
-  <div class="logo">AI <span>TRUST</span></div>
+
+  <div>
+    <div class="logo">EZIOKWU <span>AI</span></div>
+    <span class="brand-small">ARTIFICIAL INTELLIGENCE VERIFICATION & TRUST</span>
+  </div>
+
   <nav>
     <a href="#about" data-i="about">About</a>
     <a href="#registry" data-i="registry">Registry</a>
     <a href="#safety" data-i="safety">Safety</a>
     <a href="#method" data-i="method">Methodology</a>
   </nav>
+
   <select id="language" aria-label="Select language">
     <option value="en">English</option>
     <option value="fr">Français</option>
@@ -126,190 +272,614 @@ a {color:var(--green)}
     <option value="hi">हिन्दी</option>
     <option value="sw">Kiswahili</option>
   </select>
+
 </header>
 
 <div class="hero">
-  <div class="eyebrow">GLOBAL AI & ROBOTICS SAFETY REGISTRY</div>
-  <h1 data-i="headline">KNOW THE AI.<br>MEASURE THE RISK.<br>PROTECT HUMANITY.</h1>
+
+  <div class="eyebrow" data-i="eyebrow">
+    INDEPENDENT AI & ROBOTICS RESEARCH
+  </div>
+
+  <h1 data-i="headline">
+    KNOW THE AI.<br>
+    MEASURE THE RISK.<br>
+    PROTECT HUMANITY.
+  </h1>
+
   <p data-i="intro">
-    An independent initiative to improve transparency,
-    safety and accountability in artificial intelligence
-    and robotics.
+    An independent initiative dedicated to the identification,
+    research, evaluation and transparency of artificial
+    intelligence systems and autonomous robotics.
   </p>
-  <a class="btn" href="#registry" data-i="explore">EXPLORE THE REGISTRY</a>
+
+  <div class="tagline" data-i="tagline">
+    THE TRUTH BEHIND INTELLIGENCE.
+  </div>
+
+  <a class="btn" href="#registry" data-i="explore">
+    EXPLORE THE REGISTRY
+  </a>
+
 </div>
 
 <section id="about">
+
   <h2 data-i="mission">Our Mission</h2>
+
   <p class="sub" data-i="missionText">
-    We aim to make information about AI systems and robots
-    accessible, understandable and transparent for everyone.
+    EZIOKWU AI aims to make information about artificial
+    intelligence systems and robots more accessible,
+    understandable and transparent through independent
+    research and evidence-based evaluation.
   </p>
+
 </section>
 
 <section id="safety">
+
   <h2 data-i="classification">Safety Classification</h2>
+
   <p class="sub" data-i="classificationText">
-    Five risk levels and one verification status.
-    Each assessment must be supported by documented evidence.
+    A preliminary classification framework designed to
+    communicate assessed risk and verification status.
+    Every assessment must be supported by documented evidence.
   </p>
+
   <div class="grid">
-    <div class="card"><span class="dot green"></span><b>GREEN</b><p>Low risk within assessed scope.</p></div>
-    <div class="card"><span class="dot yellow"></span><b>YELLOW</b><p>Moderate risk. Caution recommended.</p></div>
-    <div class="card"><span class="dot orange"></span><b>ORANGE</b><p>Elevated risk. Enhanced controls.</p></div>
-    <div class="card"><span class="dot red"></span><b>RED</b><p>High risk. Serious hazards identified.</p></div>
-    <div class="card"><span class="dot grey"></span><b>GREY</b><p>Unverified. Evidence insufficient.</p></div>
+
+    <div class="card">
+      <span class="dot green"></span>
+      <b data-i="greenTitle">GREEN — Lower assessed risk</b>
+      <p data-i="greenText">
+        Lower risk within the specific scope and conditions assessed.
+      </p>
+    </div>
+
+    <div class="card">
+      <span class="dot yellow"></span>
+      <b data-i="yellowTitle">YELLOW — Moderate risk</b>
+      <p data-i="yellowText">
+        Potential concerns identified. Caution and monitoring recommended.
+      </p>
+    </div>
+
+    <div class="card">
+      <span class="dot orange"></span>
+      <b data-i="orangeTitle">ORANGE — Elevated risk</b>
+      <p data-i="orangeText">
+        Significant concerns requiring enhanced safeguards and controls.
+      </p>
+    </div>
+
+    <div class="card">
+      <span class="dot red"></span>
+      <b data-i="redTitle">RED — High assessed risk</b>
+      <p data-i="redText">
+        Serious hazards or unacceptable risks identified within the assessed scope.
+      </p>
+    </div>
+
+    <div class="card">
+      <span class="dot grey"></span>
+      <b data-i="greyTitle">GREY — Unverified</b>
+      <p data-i="greyText">
+        Insufficient evidence to support an independent assessment.
+      </p>
+    </div>
+
   </div>
+
+  <div class="notice" data-i="classificationNotice">
+    Important: These categories are a proposed assessment framework,
+    not an official certification or guarantee of safety.
+    A classification applies only to the documented assessment scope.
+  </div>
+
 </section>
 
 <section id="registry">
+
   <h2 data-i="registryTitle">Explore the Registry</h2>
+
   <p class="sub" data-i="registryText">
-    Search the demonstration records below.
+    Search the illustrative demonstration records below.
+    The registry will evolve as verified information and
+    assessment records are added.
   </p>
-  <input id="search" type="search"
+
+  <input
+    id="search"
+    type="search"
     placeholder="Search AI systems or robots..."
-    aria-label="Search registry">
+    aria-label="Search registry"
+  >
+
   <div class="grid" id="records">
+
     <div class="card">
-      <span class="tag">ILLUSTRATIVE DEMO</span>
-      <h3>Example AI Assistant</h3>
-      <p>Type: Software AI</p>
-      <p>Status: <b>GREY — Unverified</b></p>
-      <p>Independent assessment: Not conducted.</p>
+      <span class="tag" data-i="demo">ILLUSTRATIVE DEMO</span>
+      <h3 data-i="exampleAI">Example AI Assistant</h3>
+      <p data-i="software">Type: Software AI</p>
+      <p data-i="unverified">Status: GREY — Unverified</p>
+      <p data-i="notAssessed">Independent assessment: Not conducted.</p>
     </div>
+
     <div class="card">
-      <span class="tag">ILLUSTRATIVE DEMO</span>
-      <h3>Example Industrial Robot</h3>
-      <p>Type: Physical robot</p>
-      <p>Status: <b>GREY — Unverified</b></p>
-      <p>Independent assessment: Not conducted.</p>
+      <span class="tag" data-i="demo">ILLUSTRATIVE DEMO</span>
+      <h3 data-i="exampleRobot">Example Industrial Robot</h3>
+      <p data-i="physical">Type: Physical robot</p>
+      <p data-i="unverified">Status: GREY — Unverified</p>
+      <p data-i="notAssessed">Independent assessment: Not conducted.</p>
     </div>
+
   </div>
+
+  <p class="notice" data-i="demoNotice">
+    These are fictional demonstration entries. They do not represent
+    real products, companies or completed safety assessments.
+  </p>
+
 </section>
 
 <section id="method">
+
   <h2 data-i="methodTitle">Our Methodology</h2>
+
   <p class="sub" data-i="methodText">
-    AI TRUST intends to examine identity, intended use,
-    safety controls, performance, reliability, autonomy,
-    cybersecurity and documented incidents.
-    Results will include scope, test conditions,
-    evidence, limitations and assessment date.
+    EZIOKWU AI intends to examine system identity, intended use,
+    performance, reliability, autonomy, safety controls,
+    cybersecurity, human oversight and documented incidents.
+    Each published assessment should identify its scope,
+    test conditions, supporting evidence, limitations and date.
   </p>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3 data-i="identityTitle">01 — Identity</h3>
+      <p data-i="identityText">
+        Identification of the AI system, manufacturer,
+        version and declared purpose.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3 data-i="performanceTitle">02 — Performance</h3>
+      <p data-i="performanceText">
+        Examination of capabilities, reliability
+        and documented limitations.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3 data-i="safetyTitle">03 — Safety</h3>
+      <p data-i="safetyText">
+        Review of safeguards, human oversight,
+        risks and potential hazards.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3 data-i="evidenceTitle">04 — Evidence</h3>
+      <p data-i="evidenceText">
+        Documentation of sources, assessment conditions,
+        findings and limitations.
+      </p>
+    </div>
+
+  </div>
+
 </section>
 
 <footer>
-  <b>AI TRUST</b> — Global AI & Robotics Safety Registry
-  <p>Independent initiative. Registry inclusion is not certification or regulatory approval.</p>
-  <p>© 2026 AI TRUST. Working project.</p>
+
+  <strong>EZIOKWU AI</strong>
+  — Artificial Intelligence Verification & Trust
+
+  <p data-i="footerText">
+    An independent initiative for AI and robotics transparency,
+    research and evidence-based evaluation.
+  </p>
+
+  <p data-i="disclaimer">
+    Registry inclusion does not constitute certification,
+    regulatory approval or a guarantee of safety.
+  </p>
+
+  <p>© 2026 EZIOKWU AI. Working project.</p>
+
 </footer>
 
 <script>
+
 const translations = {
-en:{
-about:"About",registry:"Registry",safety:"Safety",method:"Methodology",
+
+en: {
+about:"About", registry:"Registry", safety:"Safety",
+method:"Methodology",
+eyebrow:"INDEPENDENT AI & ROBOTICS RESEARCH",
 headline:"KNOW THE AI.<br>MEASURE THE RISK.<br>PROTECT HUMANITY.",
-intro:"An independent initiative to improve transparency, safety and accountability in artificial intelligence and robotics.",
-explore:"EXPLORE THE REGISTRY",mission:"Our Mission",
-missionText:"We aim to make information about AI systems and robots accessible, understandable and transparent for everyone.",
+intro:"An independent initiative dedicated to the identification, research, evaluation and transparency of artificial intelligence systems and autonomous robotics.",
+tagline:"THE TRUTH BEHIND INTELLIGENCE.",
+explore:"EXPLORE THE REGISTRY",
+mission:"Our Mission",
+missionText:"EZIOKWU AI aims to make information about artificial intelligence systems and robots more accessible, understandable and transparent through independent research and evidence-based evaluation.",
 classification:"Safety Classification",
-classificationText:"Five risk levels and one verification status. Each assessment must be supported by documented evidence.",
-registryTitle:"Explore the Registry",registryText:"Search the demonstration records below.",
+classificationText:"A preliminary classification framework designed to communicate assessed risk and verification status. Every assessment must be supported by documented evidence.",
+greenTitle:"GREEN — Lower assessed risk",
+greenText:"Lower risk within the specific scope and conditions assessed.",
+yellowTitle:"YELLOW — Moderate risk",
+yellowText:"Potential concerns identified. Caution and monitoring recommended.",
+orangeTitle:"ORANGE — Elevated risk",
+orangeText:"Significant concerns requiring enhanced safeguards and controls.",
+redTitle:"RED — High assessed risk",
+redText:"Serious hazards or unacceptable risks identified within the assessed scope.",
+greyTitle:"GREY — Unverified",
+greyText:"Insufficient evidence to support an independent assessment.",
+classificationNotice:"Important: These categories are a proposed assessment framework, not an official certification or guarantee of safety. A classification applies only to the documented assessment scope.",
+registryTitle:"Explore the Registry",
+registryText:"Search the illustrative demonstration records below. The registry will evolve as verified information and assessment records are added.",
+demo:"ILLUSTRATIVE DEMO",
+exampleAI:"Example AI Assistant",
+software:"Type: Software AI",
+unverified:"Status: GREY — Unverified",
+notAssessed:"Independent assessment: Not conducted.",
+exampleRobot:"Example Industrial Robot",
+physical:"Type: Physical robot",
+demoNotice:"These are fictional demonstration entries. They do not represent real products, companies or completed safety assessments.",
 methodTitle:"Our Methodology",
-methodText:"AI TRUST intends to examine identity, intended use, safety controls, performance, reliability, autonomy, cybersecurity and documented incidents. Results will include scope, test conditions, evidence, limitations and assessment date."
+methodText:"EZIOKWU AI intends to examine system identity, intended use, performance, reliability, autonomy, safety controls, cybersecurity, human oversight and documented incidents. Each published assessment should identify its scope, test conditions, supporting evidence, limitations and date.",
+identityTitle:"01 — Identity",
+identityText:"Identification of the AI system, manufacturer, version and declared purpose.",
+performanceTitle:"02 — Performance",
+performanceText:"Examination of capabilities, reliability and documented limitations.",
+safetyTitle:"03 — Safety",
+safetyText:"Review of safeguards, human oversight, risks and potential hazards.",
+evidenceTitle:"04 — Evidence",
+evidenceText:"Documentation of sources, assessment conditions, findings and limitations.",
+footerText:"An independent initiative for AI and robotics transparency, research and evidence-based evaluation.",
+disclaimer:"Registry inclusion does not constitute certification, regulatory approval or a guarantee of safety."
 },
-fr:{
-about:"À propos",registry:"Registre",safety:"Sécurité",method:"Méthodologie",
+
+fr: {
+about:"À propos", registry:"Registre", safety:"Sécurité",
+method:"Méthodologie",
+eyebrow:"RECHERCHE INDÉPENDANTE SUR L'IA ET LA ROBOTIQUE",
 headline:"COMPRENDRE L'IA.<br>MESURER LE RISQUE.<br>PROTÉGER L'HUMANITÉ.",
-intro:"Une initiative indépendante pour améliorer la transparence, la sécurité et la responsabilité dans l'intelligence artificielle et la robotique.",
-explore:"EXPLORER LE REGISTRE",mission:"Notre mission",
-missionText:"Rendre les informations sur les systèmes d'IA et les robots accessibles, compréhensibles et transparentes pour tous.",
+intro:"Une initiative indépendante consacrée à l'identification, à la recherche, à l'évaluation et à la transparence des systèmes d'intelligence artificielle et de robotique autonome.",
+tagline:"LA VÉRITÉ DERRIÈRE L'INTELLIGENCE.",
+explore:"EXPLORER LE REGISTRE",
+mission:"Notre mission",
+missionText:"EZIOKWU AI souhaite rendre les informations sur les systèmes d'intelligence artificielle et les robots plus accessibles, compréhensibles et transparentes grâce à une recherche indépendante et à des évaluations fondées sur des preuves.",
 classification:"Classification de sécurité",
-classificationText:"Cinq niveaux de risque et un statut de vérification. Chaque évaluation doit être soutenue par des preuves documentées.",
-registryTitle:"Explorer le registre",registryText:"Recherchez dans les fiches de démonstration ci-dessous.",
+classificationText:"Un cadre préliminaire de classification destiné à communiquer le niveau de risque évalué et le statut de vérification. Chaque évaluation doit être étayée par des preuves documentées.",
+greenTitle:"VERT — Risque évalué faible",
+greenText:"Risque plus faible dans le périmètre et les conditions évalués.",
+yellowTitle:"JAUNE — Risque modéré",
+yellowText:"Des préoccupations potentielles sont identifiées. Prudence et surveillance recommandées.",
+orangeTitle:"ORANGE — Risque élevé",
+orangeText:"Préoccupations importantes nécessitant des mesures de protection renforcées.",
+redTitle:"ROUGE — Risque évalué élevé",
+redText:"Des dangers sérieux ou des risques inacceptables sont identifiés dans le périmètre évalué.",
+greyTitle:"GRIS — Non vérifié",
+greyText:"Les preuves disponibles sont insuffisantes pour permettre une évaluation indépendante.",
+classificationNotice:"Important : ces catégories constituent un cadre d'évaluation proposé, et non une certification officielle ou une garantie de sécurité. Toute classification s'applique uniquement au périmètre documenté.",
+registryTitle:"Explorer le registre",
+registryText:"Recherchez dans les fiches de démonstration ci-dessous. Le registre évoluera avec l'ajout d'informations vérifiées et de rapports d'évaluation.",
+demo:"DÉMONSTRATION ILLUSTRATIVE",
+exampleAI:"Exemple d'assistant IA",
+software:"Type : IA logicielle",
+unverified:"Statut : GRIS — Non vérifié",
+notAssessed:"Évaluation indépendante : Non réalisée.",
+exampleRobot:"Exemple de robot industriel",
+physical:"Type : Robot physique",
+demoNotice:"Ces fiches sont fictives. Elles ne représentent aucun produit ou entreprise réel et ne correspondent à aucune évaluation de sécurité réalisée.",
 methodTitle:"Notre méthodologie",
-methodText:"AI TRUST prévoit d'examiner l'identité, l'utilisation prévue, les contrôles de sécurité, les performances, la fiabilité, l'autonomie, la cybersécurité et les incidents documentés. Les résultats préciseront le périmètre, les conditions de test, les preuves, les limites et la date d'évaluation."
+methodText:"EZIOKWU AI prévoit d'examiner l'identité du système, son utilisation prévue, ses performances, sa fiabilité, son autonomie, ses contrôles de sécurité, sa cybersécurité, la supervision humaine et les incidents documentés. Chaque évaluation publiée devra préciser son périmètre, les conditions de test, les preuves, les limites et la date.",
+identityTitle:"01 — Identité",
+identityText:"Identification du système d'IA, de son fabricant, de sa version et de son objectif déclaré.",
+performanceTitle:"02 — Performance",
+performanceText:"Examen des capacités, de la fiabilité et des limites documentées.",
+safetyTitle:"03 — Sécurité",
+safetyText:"Examen des protections, de la supervision humaine, des risques et des dangers potentiels.",
+evidenceTitle:"04 — Preuves",
+evidenceText:"Documentation des sources, conditions d'évaluation, résultats et limites.",
+footerText:"Une initiative indépendante pour la transparence, la recherche et l'évaluation documentée de l'IA et de la robotique.",
+disclaimer:"La présence dans le registre ne constitue ni une certification, ni une approbation réglementaire, ni une garantie de sécurité."
 },
-es:{
-about:"Acerca de",registry:"Registro",safety:"Seguridad",method:"Metodología",
+
+es: {
+about:"Acerca de", registry:"Registro", safety:"Seguridad",
+method:"Metodología",
+eyebrow:"INVESTIGACIÓN INDEPENDIENTE SOBRE IA Y ROBÓTICA",
 headline:"CONOCE LA IA.<br>MIDE EL RIESGO.<br>PROTEGE A LA HUMANIDAD.",
-intro:"Una iniciativa independiente para mejorar la transparencia, la seguridad y la responsabilidad en la inteligencia artificial y la robótica.",
-explore:"EXPLORAR EL REGISTRO",mission:"Nuestra misión",
-missionText:"Hacer que la información sobre sistemas de IA y robots sea accesible, comprensible y transparente para todos.",
+intro:"Una iniciativa independiente dedicada a la identificación, investigación, evaluación y transparencia de los sistemas de inteligencia artificial y la robótica autónoma.",
+tagline:"LA VERDAD DETRÁS DE LA INTELIGENCIA.",
+explore:"EXPLORAR EL REGISTRO",
+mission:"Nuestra misión",
+missionText:"EZIOKWU AI busca hacer que la información sobre sistemas de inteligencia artificial y robots sea más accesible, comprensible y transparente mediante investigación independiente y evaluaciones basadas en pruebas.",
 classification:"Clasificación de seguridad",
-classificationText:"Cinco niveles de riesgo y un estado de verificación. Cada evaluación debe estar respaldada por pruebas documentadas.",
-registryTitle:"Explorar el registro",registryText:"Busca en los registros de demostración.",
+classificationText:"Un marco preliminar para comunicar el riesgo evaluado y el estado de verificación. Cada evaluación debe estar respaldada por pruebas documentadas.",
+greenTitle:"VERDE — Riesgo evaluado bajo",
+greenText:"Riesgo menor dentro del alcance y las condiciones evaluadas.",
+yellowTitle:"AMARILLO — Riesgo moderado",
+yellowText:"Se identifican posibles preocupaciones. Se recomienda precaución y supervisión.",
+orangeTitle:"NARANJA — Riesgo elevado",
+orangeText:"Preocupaciones importantes que requieren medidas de protección reforzadas.",
+redTitle:"ROJO — Riesgo evaluado alto",
+redText:"Se identifican peligros graves o riesgos inaceptables dentro del alcance evaluado.",
+greyTitle:"GRIS — No verificado",
+greyText:"No hay pruebas suficientes para respaldar una evaluación independiente.",
+classificationNotice:"Importante: estas categorías constituyen un marco de evaluación propuesto, no una certificación oficial ni una garantía de seguridad. La clasificación solo se aplica al alcance documentado.",
+registryTitle:"Explorar el registro",
+registryText:"Busca en los registros ilustrativos de demostración. El registro evolucionará a medida que se incorporen información verificada y evaluaciones.",
+demo:"EJEMPLO ILUSTRATIVO",
+exampleAI:"Ejemplo de asistente de IA",
+software:"Tipo: IA de software",
+unverified:"Estado: GRIS — No verificado",
+notAssessed:"Evaluación independiente: No realizada.",
+exampleRobot:"Ejemplo de robot industrial",
+physical:"Tipo: Robot físico",
+demoNotice:"Estos registros son ficticios. No representan productos ni empresas reales y no corresponden a evaluaciones de seguridad realizadas.",
 methodTitle:"Nuestra metodología",
-methodText:"AI TRUST pretende examinar la identidad, el uso previsto, los controles de seguridad, el rendimiento, la fiabilidad, la autonomía, la ciberseguridad y los incidentes documentados."
+methodText:"EZIOKWU AI pretende examinar la identidad del sistema, el uso previsto, el rendimiento, la fiabilidad, la autonomía, los controles de seguridad, la ciberseguridad, la supervisión humana y los incidentes documentados. Cada evaluación publicada deberá indicar su alcance, condiciones de prueba, pruebas, limitaciones y fecha.",
+identityTitle:"01 — Identidad",
+identityText:"Identificación del sistema de IA, fabricante, versión y finalidad declarada.",
+performanceTitle:"02 — Rendimiento",
+performanceText:"Examen de capacidades, fiabilidad y limitaciones documentadas.",
+safetyTitle:"03 — Seguridad",
+safetyText:"Revisión de medidas de protección, supervisión humana, riesgos y peligros potenciales.",
+evidenceTitle:"04 — Evidencia",
+evidenceText:"Documentación de fuentes, condiciones de evaluación, resultados y limitaciones.",
+footerText:"Una iniciativa independiente para la transparencia, investigación y evaluación basada en pruebas de la IA y la robótica.",
+disclaimer:"La inclusión en el registro no constituye certificación, aprobación reglamentaria ni garantía de seguridad."
 },
-zh:{
-about:"关于我们",registry:"登记库",safety:"安全",method:"评估方法",
+
+zh: {
+about:"关于我们", registry:"登记库", safety:"安全",
+method:"评估方法",
+eyebrow:"独立人工智能与机器人研究",
 headline:"了解人工智能。<br>衡量风险。<br>保护人类。",
-intro:"一个旨在提高人工智能与机器人透明度、安全性和责任意识的独立倡议。",
-explore:"探索登记库",mission:"我们的使命",
-missionText:"让每个人都能获取并理解人工智能系统和机器人的相关信息。",
+intro:"一个致力于人工智能系统和自主机器人识别、研究、评估与透明度的独立倡议。",
+tagline:"洞察智能背后的真相。",
+explore:"探索登记库",
+mission:"我们的使命",
+missionText:"EZIOKWU AI旨在通过独立研究和基于证据的评估，让人工智能系统和机器人的信息更加公开、易懂和透明。",
 classification:"安全分类",
-classificationText:"五个风险等级和一个验证状态。每项评估都必须有记录证据支持。",
-registryTitle:"探索登记库",registryText:"搜索以下演示记录。",
-methodTitle:"评估方法",
-methodText:"AI TRUST计划评估身份、预期用途、安全控制、性能、可靠性、自主性、网络安全和已记录事件。"
+classificationText:"用于说明评估风险和验证状态的初步分类框架。每项评估都必须有记录证据支持。",
+greenTitle:"绿色 — 评估风险较低",
+greenText:"在已评估的范围和条件下，风险较低。",
+yellowTitle:"黄色 — 中等风险",
+yellowText:"发现潜在问题。建议谨慎使用并持续监测。",
+orangeTitle:"橙色 — 风险较高",
+orangeText:"发现重要问题，需要加强安全措施和控制。",
+redTitle:"红色 — 高风险",
+redText:"在评估范围内发现严重危害或不可接受的风险。",
+greyTitle:"灰色 — 未经验证",
+greyText:"证据不足，无法支持独立评估。",
+classificationNotice:"重要提示：这些类别是拟议的评估框架，并非官方认证或安全保证。分类仅适用于已记录的评估范围。",
+registryTitle:"探索登记库",
+registryText:"搜索以下示例演示记录。随着经过验证的信息和评估记录不断增加，登记库也将持续发展。",
+demo:"示例演示",
+exampleAI:"人工智能助手示例",
+software:"类型：软件人工智能",
+unverified:"状态：灰色 — 未经验证",
+notAssessed:"独立评估：尚未进行。",
+exampleRobot:"工业机器人示例",
+physical:"类型：实体机器人",
+demoNotice:"这些是虚构的演示条目，不代表真实产品或公司，也不代表已经完成的安全评估。",
+methodTitle:"我们的评估方法",
+methodText:"EZIOKWU AI计划研究系统身份、预期用途、性能、可靠性、自主性、安全控制、网络安全、人类监督以及已记录的事件。每份公开评估都应说明范围、测试条件、证据、局限性和日期。",
+identityTitle:"01 — 身份",
+identityText:"识别人工智能系统、制造商、版本和声明用途。",
+performanceTitle:"02 — 性能",
+performanceText:"检查能力、可靠性和已记录的局限性。",
+safetyTitle:"03 — 安全",
+safetyText:"审查安全措施、人类监督、风险和潜在危害。",
+evidenceTitle:"04 — 证据",
+evidenceText:"记录来源、评估条件、结果和局限性。",
+footerText:"致力于人工智能与机器人透明度、研究和基于证据评估的独立倡议。",
+disclaimer:"列入登记库不构成认证、监管批准或安全保证。"
 },
-ar:{
-about:"من نحن",registry:"السجل",safety:"السلامة",method:"المنهجية",
+
+ar: {
+about:"من نحن", registry:"السجل", safety:"السلامة",
+method:"المنهجية",
+eyebrow:"بحث مستقل في الذكاء الاصطناعي والروبوتات",
 headline:"افهم الذكاء الاصطناعي.<br>قيّم المخاطر.<br>احمِ الإنسانية.",
-intro:"مبادرة مستقلة لتعزيز الشفافية والسلامة والمساءلة في الذكاء الاصطناعي والروبوتات.",
-explore:"استكشف السجل",mission:"مهمتنا",
-missionText:"جعل المعلومات حول أنظمة الذكاء الاصطناعي والروبوتات متاحة وواضحة للجميع.",
+intro:"مبادرة مستقلة مخصصة لتحديد أنظمة الذكاء الاصطناعي والروبوتات المستقلة والبحث فيها وتقييمها وتعزيز الشفافية بشأنها.",
+tagline:"الحقيقة وراء الذكاء.",
+explore:"استكشف السجل",
+mission:"مهمتنا",
+missionText:"تهدف EZIOKWU AI إلى جعل المعلومات المتعلقة بأنظمة الذكاء الاصطناعي والروبوتات أكثر سهولة ووضوحاً وشفافية من خلال البحث المستقل والتقييم القائم على الأدلة.",
 classification:"تصنيف السلامة",
-classificationText:"خمسة مستويات للمخاطر وحالة واحدة للتحقق. يجب دعم كل تقييم بأدلة موثقة.",
-registryTitle:"استكشف السجل",registryText:"ابحث في السجلات التجريبية أدناه.",
+classificationText:"إطار تصنيف أولي لتوضيح المخاطر التي تم تقييمها وحالة التحقق. يجب دعم كل تقييم بأدلة موثقة.",
+greenTitle:"أخضر — مخاطر منخفضة وفق التقييم",
+greenText:"مخاطر أقل ضمن النطاق والظروف التي تم تقييمها.",
+yellowTitle:"أصفر — مخاطر متوسطة",
+yellowText:"تم تحديد مخاوف محتملة. يُوصى بالحذر والمراقبة.",
+orangeTitle:"برتقالي — مخاطر مرتفعة",
+orangeText:"مخاوف مهمة تتطلب ضمانات وضوابط إضافية.",
+redTitle:"أحمر — مخاطر عالية",
+redText:"تم تحديد مخاطر جسيمة أو غير مقبولة ضمن نطاق التقييم.",
+greyTitle:"رمادي — غير متحقق منه",
+greyText:"الأدلة غير كافية لإجراء تقييم مستقل.",
+classificationNotice:"مهم: هذه الفئات إطار تقييم مقترح وليست شهادة رسمية أو ضماناً للسلامة. ينطبق التصنيف فقط على نطاق التقييم الموثق.",
+registryTitle:"استكشف السجل",
+registryText:"ابحث في السجلات التوضيحية أدناه. سيتطور السجل مع إضافة المعلومات الموثقة ونتائج التقييم.",
+demo:"مثال توضيحي",
+exampleAI:"مثال على مساعد ذكاء اصطناعي",
+software:"النوع: ذكاء اصطناعي برمجي",
+unverified:"الحالة: رمادي — غير متحقق منه",
+notAssessed:"التقييم المستقل: لم يُجرَ.",
+exampleRobot:"مثال على روبوت صناعي",
+physical:"النوع: روبوت مادي",
+demoNotice:"هذه سجلات تجريبية خيالية. لا تمثل منتجات أو شركات حقيقية ولا تشير إلى تقييمات سلامة مكتملة.",
 methodTitle:"منهجيتنا",
-methodText:"تعتزم AI TRUST دراسة الهوية والاستخدام المقصود وضوابط السلامة والأداء والموثوقية والاستقلالية والأمن السيبراني والحوادث الموثقة."
+methodText:"تعتزم EZIOKWU AI دراسة هوية النظام والاستخدام المقصود والأداء والموثوقية والاستقلالية وضوابط السلامة والأمن السيبراني والإشراف البشري والحوادث الموثقة. يجب أن يحدد كل تقييم منشور نطاقه وظروف الاختبار والأدلة والقيود والتاريخ.",
+identityTitle:"01 — الهوية",
+identityText:"تحديد نظام الذكاء الاصطناعي والشركة المصنعة والإصدار والغرض المعلن.",
+performanceTitle:"02 — الأداء",
+performanceText:"فحص القدرات والموثوقية والقيود الموثقة.",
+safetyTitle:"03 — السلامة",
+safetyText:"مراجعة الضمانات والإشراف البشري والمخاطر والأخطار المحتملة.",
+evidenceTitle:"04 — الأدلة",
+evidenceText:"توثيق المصادر وظروف التقييم والنتائج والقيود.",
+footerText:"مبادرة مستقلة لتعزيز الشفافية والبحث والتقييم القائم على الأدلة في الذكاء الاصطناعي والروبوتات.",
+disclaimer:"الإدراج في السجل لا يشكل شهادة أو موافقة تنظيمية أو ضماناً للسلامة."
 },
-hi:{
-about:"हमारे बारे में",registry:"रजिस्ट्री",safety:"सुरक्षा",method:"कार्यप्रणाली",
+
+hi: {
+about:"हमारे बारे में", registry:"रजिस्ट्री", safety:"सुरक्षा",
+method:"कार्यप्रणाली",
+eyebrow:"AI और रोबोटिक्स पर स्वतंत्र अनुसंधान",
 headline:"AI को समझें।<br>जोखिम मापें।<br>मानवता की रक्षा करें।",
-intro:"कृत्रिम बुद्धिमत्ता और रोबोटिक्स में पारदर्शिता, सुरक्षा और जवाबदेही बढ़ाने की स्वतंत्र पहल।",
-explore:"रजिस्ट्री देखें",mission:"हमारा मिशन",
-missionText:"AI प्रणालियों और रोबोटों की जानकारी सभी के लिए सुलभ और समझने योग्य बनाना।",
+intro:"कृत्रिम बुद्धिमत्ता प्रणालियों और स्वायत्त रोबोटिक्स की पहचान, अनुसंधान, मूल्यांकन और पारदर्शिता के लिए एक स्वतंत्र पहल।",
+tagline:"बुद्धिमत्ता के पीछे का सच।",
+explore:"रजिस्ट्री देखें",
+mission:"हमारा मिशन",
+missionText:"EZIOKWU AI का उद्देश्य स्वतंत्र अनुसंधान और साक्ष्य-आधारित मूल्यांकन के माध्यम से AI प्रणालियों और रोबोटों की जानकारी को अधिक सुलभ, समझने योग्य और पारदर्शी बनाना है।",
 classification:"सुरक्षा वर्गीकरण",
-classificationText:"पाँच जोखिम स्तर और एक सत्यापन स्थिति। हर आकलन दस्तावेज़ी प्रमाण पर आधारित होना चाहिए।",
-registryTitle:"रजिस्ट्री देखें",registryText:"नीचे दिए गए प्रदर्शन रिकॉर्ड खोजें।",
+classificationText:"मूल्यांकित जोखिम और सत्यापन स्थिति बताने के लिए एक प्रारंभिक वर्गीकरण ढाँचा। प्रत्येक मूल्यांकन दस्तावेज़ी प्रमाण पर आधारित होना चाहिए।",
+greenTitle:"हरा — कम मूल्यांकित जोखिम",
+greenText:"मूल्यांकित दायरे और परिस्थितियों में अपेक्षाकृत कम जोखिम।",
+yellowTitle:"पीला — मध्यम जोखिम",
+yellowText:"संभावित चिंताओं की पहचान हुई है। सावधानी और निगरानी की सलाह दी जाती है।",
+orangeTitle:"नारंगी — बढ़ा हुआ जोखिम",
+orangeText:"महत्वपूर्ण चिंताएँ जिनके लिए अतिरिक्त सुरक्षा उपाय आवश्यक हैं।",
+redTitle:"लाल — उच्च मूल्यांकित जोखिम",
+redText:"मूल्यांकित दायरे में गंभीर खतरे या अस्वीकार्य जोखिम पाए गए हैं।",
+greyTitle:"धूसर — सत्यापित नहीं",
+greyText:"स्वतंत्र मूल्यांकन के लिए पर्याप्त प्रमाण उपलब्ध नहीं हैं।",
+classificationNotice:"महत्वपूर्ण: ये श्रेणियाँ प्रस्तावित मूल्यांकन ढाँचा हैं, आधिकारिक प्रमाणन या सुरक्षा की गारंटी नहीं। वर्गीकरण केवल दस्तावेज़ीकृत मूल्यांकन दायरे पर लागू होता है।",
+registryTitle:"रजिस्ट्री देखें",
+registryText:"नीचे दिए गए उदाहरण रिकॉर्ड खोजें। सत्यापित जानकारी और मूल्यांकन रिकॉर्ड जुड़ने के साथ रजिस्ट्री विकसित होगी।",
+demo:"उदाहरण प्रदर्शन",
+exampleAI:"AI सहायक का उदाहरण",
+software:"प्रकार: सॉफ्टवेयर AI",
+unverified:"स्थिति: धूसर — सत्यापित नहीं",
+notAssessed:"स्वतंत्र मूल्यांकन: नहीं किया गया।",
+exampleRobot:"औद्योगिक रोबोट का उदाहरण",
+physical:"प्रकार: भौतिक रोबोट",
+demoNotice:"ये काल्पनिक उदाहरण हैं। ये वास्तविक उत्पादों या कंपनियों का प्रतिनिधित्व नहीं करते और पूर्ण सुरक्षा मूल्यांकन नहीं हैं।",
 methodTitle:"हमारी कार्यप्रणाली",
-methodText:"AI TRUST पहचान, इच्छित उपयोग, सुरक्षा नियंत्रण, प्रदर्शन, विश्वसनीयता, स्वायत्तता, साइबर सुरक्षा और दर्ज घटनाओं का मूल्यांकन करना चाहता है।"
+methodText:"EZIOKWU AI प्रणाली की पहचान, इच्छित उपयोग, प्रदर्शन, विश्वसनीयता, स्वायत्तता, सुरक्षा नियंत्रण, साइबर सुरक्षा, मानवीय निगरानी और दर्ज घटनाओं का अध्ययन करना चाहता है। प्रत्येक प्रकाशित मूल्यांकन में उसका दायरा, परीक्षण की परिस्थितियाँ, प्रमाण, सीमाएँ और तारीख बताई जानी चाहिए।",
+identityTitle:"01 — पहचान",
+identityText:"AI प्रणाली, निर्माता, संस्करण और घोषित उद्देश्य की पहचान।",
+performanceTitle:"02 — प्रदर्शन",
+performanceText:"क्षमताओं, विश्वसनीयता और दर्ज सीमाओं की जाँच।",
+safetyTitle:"03 — सुरक्षा",
+safetyText:"सुरक्षा उपायों, मानवीय निगरानी, जोखिमों और संभावित खतरों की समीक्षा।",
+evidenceTitle:"04 — प्रमाण",
+evidenceText:"स्रोतों, मूल्यांकन स्थितियों, निष्कर्षों और सीमाओं का दस्तावेज़ीकरण।",
+footerText:"AI और रोबोटिक्स में पारदर्शिता, अनुसंधान और साक्ष्य-आधारित मूल्यांकन के लिए स्वतंत्र पहल।",
+disclaimer:"रजिस्ट्री में शामिल होना प्रमाणन, नियामक स्वीकृति या सुरक्षा की गारंटी नहीं है।"
 },
-sw:{
-about:"Kuhusu sisi",registry:"Rejesta",safety:"Usalama",method:"Mbinu",
+
+sw: {
+about:"Kuhusu sisi", registry:"Rejesta", safety:"Usalama",
+method:"Mbinu",
+eyebrow:"UTAFITI HURU WA AI NA ROBOTI",
 headline:"IFAHAMU AI.<br>PIMA HATARI.<br>LINDA UBINADAMU.",
-intro:"Mpango huru wa kuimarisha uwazi, usalama na uwajibikaji katika akili bandia na roboti.",
-explore:"CHUNGUZA REJESTA",mission:"Dhamira yetu",
-missionText:"Kufanya taarifa kuhusu mifumo ya AI na roboti zipatikane na kueleweka kwa kila mtu.",
+intro:"Mpango huru unaojikita katika utambuzi, utafiti, tathmini na uwazi wa mifumo ya akili bandia na roboti zinazojitegemea.",
+tagline:"UKWELI ULIO NYUMA YA AKILI.",
+explore:"CHUNGUZA REJESTA",
+mission:"Dhamira yetu",
+missionText:"EZIOKWU AI inalenga kufanya taarifa kuhusu mifumo ya akili bandia na roboti zipatikane kwa urahisi, zieleweke na ziwe wazi kupitia utafiti huru na tathmini inayotegemea ushahidi.",
 classification:"Uainishaji wa usalama",
-classificationText:"Viwango vitano vya hatari na hali moja ya uthibitishaji. Kila tathmini lazima iwe na ushahidi uliorekodiwa.",
-registryTitle:"Chunguza rejesta",registryText:"Tafuta rekodi za mfano hapa chini.",
+classificationText:"Mfumo wa awali wa uainishaji unaoonyesha hatari iliyotathminiwa na hali ya uthibitishaji. Kila tathmini lazima iungwe mkono na ushahidi ulioandikwa.",
+greenTitle:"KIJANI — Hatari ndogo iliyotathminiwa",
+greenText:"Hatari ndogo ndani ya wigo na mazingira yaliyotathminiwa.",
+yellowTitle:"MANJANO — Hatari ya wastani",
+yellowText:"Masuala yanayoweza kuleta wasiwasi yamebainika. Tahadhari na ufuatiliaji vinapendekezwa.",
+orangeTitle:"CHUNGWA — Hatari iliyoongezeka",
+orangeText:"Masuala muhimu yanayohitaji hatua na udhibiti wa ziada wa usalama.",
+redTitle:"NYEKUNDU — Hatari kubwa iliyotathminiwa",
+redText:"Hatari kubwa au zisizokubalika zimebainika ndani ya wigo uliotathminiwa.",
+greyTitle:"KIVULI — Haijathibitishwa",
+greyText:"Ushahidi hautoshi kuunga mkono tathmini huru.",
+classificationNotice:"Muhimu: Makundi haya ni mfumo wa tathmini unaopendekezwa, si uthibitisho rasmi wala dhamana ya usalama. Uainishaji unatumika tu kwa wigo wa tathmini ulioandikwa.",
+registryTitle:"Chunguza rejesta",
+registryText:"Tafuta rekodi za mifano hapa chini. Rejesta itaendelea kukua kadiri taarifa zilizothibitishwa na rekodi za tathmini zinavyoongezwa.",
+demo:"MFANO WA MAONYESHO",
+exampleAI:"Mfano wa msaidizi wa AI",
+software:"Aina: AI ya programu",
+unverified:"Hali: KIVULI — Haijathibitishwa",
+notAssessed:"Tathmini huru: Haijafanyika.",
+exampleRobot:"Mfano wa roboti ya viwandani",
+physical:"Aina: Roboti halisi",
+demoNotice:"Hizi ni rekodi za kubuni. Haziwakilishi bidhaa au kampuni halisi wala tathmini za usalama zilizokamilika.",
 methodTitle:"Mbinu yetu",
-methodText:"AI TRUST inalenga kuchunguza utambulisho, matumizi yaliyokusudiwa, udhibiti wa usalama, utendaji, uaminifu, uhuru wa kufanya kazi, usalama wa mtandao na matukio yaliyoripotiwa."
+methodText:"EZIOKWU AI inalenga kuchunguza utambulisho wa mfumo, matumizi yaliyokusudiwa, utendaji, uaminifu, uwezo wa kujitegemea, udhibiti wa usalama, usalama wa mtandao, usimamizi wa binadamu na matukio yaliyoandikwa. Kila tathmini itakayochapishwa inapaswa kueleza wigo wake, masharti ya majaribio, ushahidi, mipaka na tarehe.",
+identityTitle:"01 — Utambulisho",
+identityText:"Kutambua mfumo wa AI, mtengenezaji, toleo na madhumuni yaliyotangazwa.",
+performanceTitle:"02 — Utendaji",
+performanceText:"Kuchunguza uwezo, uaminifu na mipaka iliyoandikwa.",
+safetyTitle:"03 — Usalama",
+safetyText:"Kupitia hatua za ulinzi, usimamizi wa binadamu, hatari na madhara yanayoweza kutokea.",
+evidenceTitle:"04 — Ushahidi",
+evidenceText:"Kuweka kumbukumbu za vyanzo, masharti ya tathmini, matokeo na mipaka.",
+footerText:"Mpango huru wa kuimarisha uwazi, utafiti na tathmini inayotegemea ushahidi katika AI na roboti.",
+disclaimer:"Kujumuishwa kwenye rejesta hakumaanishi uthibitisho, idhini ya kisheria au dhamana ya usalama."
 }
+
 };
 
-document.getElementById("language").addEventListener("change",e=>{
- const lang=e.target.value;
- const t=translations[lang];
- document.documentElement.lang=lang;
- document.documentElement.dir=lang==="ar"?"rtl":"ltr";
- document.querySelectorAll("[data-i]").forEach(el=>{
-   const key=el.dataset.i;
-   if(t[key]) el.innerHTML=t[key];
- });
+const languageSelector = document.getElementById("language");
+
+function changeLanguage(lang) {
+
+  const t = translations[lang] || translations.en;
+
+  document.documentElement.lang = lang;
+  document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+
+  document.querySelectorAll("[data-i]").forEach(el => {
+    const key = el.dataset.i;
+
+    if (t[key]) {
+      el.innerHTML = t[key];
+    }
+  });
+
+  const search = document.getElementById("search");
+
+  const placeholders = {
+    en:"Search AI systems or robots...",
+    fr:"Rechercher des systèmes d'IA ou des robots...",
+    es:"Buscar sistemas de IA o robots...",
+    zh:"搜索人工智能系统或机器人...",
+    ar:"ابحث عن أنظمة الذكاء الاصطناعي أو الروبوتات...",
+    hi:"AI प्रणालियों या रोबोटों को खोजें...",
+    sw:"Tafuta mifumo ya AI au roboti..."
+  };
+
+  search.placeholder = placeholders[lang] || placeholders.en;
+
+}
+
+languageSelector.addEventListener("change", e => {
+  changeLanguage(e.target.value);
 });
 
-document.getElementById("search").addEventListener("input",e=>{
- const q=e.target.value.toLowerCase();
- document.querySelectorAll("#records .card").forEach(card=>{
-   card.style.display=card.innerText.toLowerCase().includes(q)?"block":"none";
- });
+document.getElementById("search").addEventListener("input", e => {
+
+  const q = e.target.value
+    .trim()
+    .toLowerCase();
+
+  document.querySelectorAll("#records .card").forEach(card => {
+
+    const content = card.innerText.toLowerCase();
+
+    card.style.display = content.includes(q) ? "" : "none";
+
+  });
+
 });
+
 </script>
+
 </body>
 </html>
